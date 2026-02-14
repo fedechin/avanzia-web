@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CalendlyButton from "./CalendlyButton";
 
 export default function Hero() {
   return (
@@ -22,9 +23,9 @@ export default function Hero() {
               <button className="rounded-lg bg-primary px-6 py-3 text-lg font-semibold text-white transition hover:bg-primary-600 active:scale-95">
                 Probá el Agente IA
               </button>
-              <button className="rounded-lg border-2 border-primary px-6 py-3 text-lg font-semibold text-primary transition hover:bg-primary-50 active:scale-95">
+              <CalendlyButton className="rounded-lg border-2 border-primary px-6 py-3 text-lg font-semibold text-primary transition hover:bg-primary-50 active:scale-95">
                 Agendá una reunión
-              </button>
+              </CalendlyButton>
             </div>
           </div>
           <div className="flex-1">
