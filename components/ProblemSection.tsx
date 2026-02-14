@@ -1,6 +1,6 @@
 export default function ProblemSection() {
   return (
-    <section className="bg-light px-4 py-16 md:py-24">
+    <section id="problema" className="bg-light px-4 py-16 md:py-24">
       <div className="mx-auto max-w-6xl">
         <h2 className="text-2xl font-bold text-dark md:text-3xl lg:text-4xl">
           ¿Por qué tu empresa necesita un Agente IA?

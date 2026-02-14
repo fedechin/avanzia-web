@@ -27,7 +27,7 @@ const steps = [
 
 export default function ImplementationSection() {
   return (
-    <section className="bg-light px-4 py-16 md:py-24">
+    <section id="implementacion" className="bg-light px-4 py-16 md:py-24">
       <div className="mx-auto max-w-6xl">
         <h2 className="text-2xl font-bold text-dark md:text-3xl lg:text-4xl">
           Implementación simple, sin dolores de cabeza

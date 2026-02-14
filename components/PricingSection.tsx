@@ -8,7 +8,7 @@ const features = [
 
 export default function PricingSection() {
   return (
-    <section className="bg-light px-4 py-16 md:py-24">
+    <section id="precio" className="bg-light px-4 py-16 md:py-24">
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-lg rounded-2xl bg-white p-8 shadow-lg md:p-10">
           <h2 className="text-center text-2xl font-bold text-dark md:text-3xl">
@@ -37,7 +37,7 @@ export default function PricingSection() {
             ))}
           </ul>
           <div className="mt-8 text-center">
-            <button className="rounded-lg bg-primary px-8 py-3 text-lg font-semibold text-white transition hover:bg-primary-600">
+            <button className="rounded-lg bg-primary px-8 py-3 text-lg font-semibold text-white transition hover:bg-primary-600 active:scale-95">
               Probá el Agente IA
             </button>
           </div>

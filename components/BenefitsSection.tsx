@@ -35,7 +35,7 @@ const benefits = [
 
 export default function BenefitsSection() {
   return (
-    <section className="bg-white px-4 py-16 md:py-24">
+    <section id="beneficios" className="bg-white px-4 py-16 md:py-24">
       <div className="mx-auto max-w-6xl">
         <h2 className="text-2xl font-bold text-dark md:text-3xl">
           AvanzIA es la solución para:
