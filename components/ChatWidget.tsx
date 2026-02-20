@@ -23,6 +23,12 @@ export default function ChatWidget() {
     useLeadCapture(userMessageCount);
 
   useEffect(() => {
+    const handleOpen = () => setIsOpen(true);
+    window.addEventListener("open-chat", handleOpen);
+    return () => window.removeEventListener("open-chat", handleOpen);
+  }, []);
+
+  useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, isLoading]);
 

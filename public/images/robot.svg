@@ -1,15 +1,82 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
-  <circle cx="200" cy="200" r="180" fill="#E8F4FD"/>
-  <rect x="120" y="140" width="160" height="140" rx="20" fill="#1E4B8E"/>
-  <circle cx="160" cy="190" r="20" fill="#FFFFFF"/>
-  <circle cx="240" cy="190" r="20" fill="#FFFFFF"/>
-  <circle cx="160" cy="190" r="10" fill="#1F2937"/>
-  <circle cx="240" cy="190" r="10" fill="#1F2937"/>
-  <rect x="160" y="230" width="80" height="10" rx="5" fill="#FFFFFF"/>
-  <rect x="180" y="80" width="40" height="40" rx="5" fill="#3B82F6"/>
-  <circle cx="200" cy="70" r="10" fill="#3B82F6"/>
-  <rect x="100" y="180" width="20" height="60" rx="10" fill="#1E4B8E"/>
-  <rect x="280" y="180" width="20" height="60" rx="10" fill="#1E4B8E"/>
-  <rect x="140" y="280" width="40" height="50" rx="10" fill="#1E4B8E"/>
-  <rect x="220" y="280" width="40" height="50" rx="10" fill="#1E4B8E"/>
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="190" fill="#E8F4FD"/>
+
+  <!-- Brain - left side -->
+  <g transform="translate(60, 80)">
+    <!-- Brain outline -->
+    <path d="M120 60 C120 30, 90 10, 65 15 C50 5, 25 10, 20 30 C5 35, 0 55, 10 75 C5 90, 10 110, 25 120 C20 140, 35 160, 55 158 C65 170, 85 170, 100 160 C115 165, 130 155, 135 140 C150 135, 160 115, 155 95 C165 80, 160 55, 140 45 C145 30, 135 15, 120 15 Z" fill="#1E4B8E" opacity="0.9"/>
+    <!-- Brain center line -->
+    <path d="M80 20 C78 50, 82 80, 78 110 C76 130, 80 150, 82 160" stroke="#E8F4FD" stroke-width="2" fill="none" opacity="0.5"/>
+    <!-- Brain folds -->
+    <path d="M40 45 C55 40, 65 50, 75 45" stroke="#E8F4FD" stroke-width="2" fill="none" opacity="0.4"/>
+    <path d="M85 40 C100 35, 110 45, 125 40" stroke="#E8F4FD" stroke-width="2" fill="none" opacity="0.4"/>
+    <path d="M30 75 C50 68, 60 78, 75 72" stroke="#E8F4FD" stroke-width="2" fill="none" opacity="0.4"/>
+    <path d="M85 70 C105 63, 115 75, 140 68" stroke="#E8F4FD" stroke-width="2" fill="none" opacity="0.4"/>
+    <path d="M25 105 C45 98, 55 108, 75 102" stroke="#E8F4FD" stroke-width="2" fill="none" opacity="0.4"/>
+    <path d="M85 100 C105 93, 120 105, 140 100" stroke="#E8F4FD" stroke-width="2" fill="none" opacity="0.4"/>
+    <path d="M40 130 C55 125, 65 135, 75 130" stroke="#E8F4FD" stroke-width="2" fill="none" opacity="0.4"/>
+    <path d="M85 128 C100 123, 115 133, 125 128" stroke="#E8F4FD" stroke-width="2" fill="none" opacity="0.4"/>
+
+    <!-- Circuit nodes on brain -->
+    <circle cx="50" cy="55" r="4" fill="#3B82F6"/>
+    <circle cx="110" cy="50" r="4" fill="#3B82F6"/>
+    <circle cx="40" cy="90" r="4" fill="#3B82F6"/>
+    <circle cx="120" cy="85" r="4" fill="#3B82F6"/>
+    <circle cx="55" cy="120" r="4" fill="#3B82F6"/>
+    <circle cx="105" cy="115" r="4" fill="#3B82F6"/>
+    <circle cx="80" cy="75" r="5" fill="#3B82F6"/>
+
+    <!-- Circuit connections -->
+    <line x1="50" y1="55" x2="80" y2="75" stroke="#3B82F6" stroke-width="1.5" opacity="0.6"/>
+    <line x1="110" y1="50" x2="80" y2="75" stroke="#3B82F6" stroke-width="1.5" opacity="0.6"/>
+    <line x1="40" y1="90" x2="80" y2="75" stroke="#3B82F6" stroke-width="1.5" opacity="0.6"/>
+    <line x1="120" y1="85" x2="80" y2="75" stroke="#3B82F6" stroke-width="1.5" opacity="0.6"/>
+    <line x1="55" y1="120" x2="80" y2="75" stroke="#3B82F6" stroke-width="1.5" opacity="0.6"/>
+    <line x1="105" y1="115" x2="80" y2="75" stroke="#3B82F6" stroke-width="1.5" opacity="0.6"/>
+  </g>
+
+  <!-- Flowing connection lines from brain to chat -->
+  <path d="M220 170 C240 175, 250 185, 260 200" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4 3" opacity="0.5"/>
+  <path d="M210 185 C230 195, 245 210, 255 225" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4 3" opacity="0.5"/>
+  <path d="M220 200 C235 210, 250 230, 260 245" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4 3" opacity="0.5"/>
+
+  <!-- Small animated-looking dots on connection lines -->
+  <circle cx="235" cy="180" r="3" fill="#3B82F6" opacity="0.7"/>
+  <circle cx="245" cy="210" r="3" fill="#3B82F6" opacity="0.7"/>
+  <circle cx="240" cy="240" r="3" fill="#3B82F6" opacity="0.7"/>
+
+  <!-- Chat bubble - right side -->
+  <g transform="translate(245, 185)">
+    <rect x="0" y="0" width="120" height="95" rx="16" fill="#1E4B8E"/>
+    <!-- Chat bubble tail -->
+    <polygon points="20,95 35,95 15,115" fill="#1E4B8E"/>
+
+    <!-- Chat lines -->
+    <rect x="16" y="18" width="60" height="8" rx="4" fill="#FFFFFF" opacity="0.9"/>
+    <rect x="16" y="34" width="88" height="8" rx="4" fill="#FFFFFF" opacity="0.6"/>
+    <rect x="16" y="50" width="45" height="8" rx="4" fill="#FFFFFF" opacity="0.6"/>
+
+    <!-- Typing indicator dots -->
+    <circle cx="28" cy="74" r="5" fill="#3B82F6"/>
+    <circle cx="48" cy="74" r="5" fill="#3B82F6" opacity="0.7"/>
+    <circle cx="68" cy="74" r="5" fill="#3B82F6" opacity="0.4"/>
+  </g>
+
+  <!-- Small decorative elements -->
+  <!-- Top right sparkle -->
+  <g transform="translate(330, 70)">
+    <line x1="0" y1="-8" x2="0" y2="8" stroke="#3B82F6" stroke-width="2" opacity="0.5"/>
+    <line x1="-8" y1="0" x2="8" y2="0" stroke="#3B82F6" stroke-width="2" opacity="0.5"/>
+  </g>
+  <!-- Bottom left sparkle -->
+  <g transform="translate(55, 330)">
+    <line x1="0" y1="-6" x2="0" y2="6" stroke="#3B82F6" stroke-width="2" opacity="0.4"/>
+    <line x1="-6" y1="0" x2="6" y2="0" stroke="#3B82F6" stroke-width="2" opacity="0.4"/>
+  </g>
+  <!-- Small dots decoration -->
+  <circle cx="340" cy="310" r="3" fill="#1E4B8E" opacity="0.3"/>
+  <circle cx="355" cy="295" r="2" fill="#1E4B8E" opacity="0.2"/>
+  <circle cx="70" cy="100" r="3" fill="#1E4B8E" opacity="0.3"/>
+  <circle cx="55" cy="115" r="2" fill="#1E4B8E" opacity="0.2"/>
 </svg>

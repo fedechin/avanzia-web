@@ -1,5 +1,6 @@
 import Image from "next/image";
 import CalendlyButton from "./CalendlyButton";
+import OpenChatButton from "./OpenChatButton";
 
 export default function Hero() {
   return (
@@ -20,9 +21,9 @@ export default function Hero() {
               AvanzIA no reemplaza personas. Potencia equipos.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center md:justify-start">
-              <button className="rounded-lg bg-primary px-6 py-3 text-lg font-semibold text-white transition hover:bg-primary-600 active:scale-95">
+              <OpenChatButton className="rounded-lg bg-primary px-6 py-3 text-lg font-semibold text-white transition hover:bg-primary-600 active:scale-95">
                 Probá el Agente IA
-              </button>
+              </OpenChatButton>
               <CalendlyButton className="rounded-lg border-2 border-primary px-6 py-3 text-lg font-semibold text-primary transition hover:bg-primary-50 active:scale-95">
                 Agendá una reunión
               </CalendlyButton>

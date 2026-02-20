@@ -1,3 +1,5 @@
+import OpenChatButton from "./OpenChatButton";
+
 const features = [
   "Agente IA personalizado para tu empresa",
   "Atención 24/7 sin interrupciones",
@@ -37,9 +39,9 @@ export default function PricingSection() {
             ))}
           </ul>
           <div className="mt-8 text-center">
-            <button className="rounded-lg bg-primary px-8 py-3 text-lg font-semibold text-white transition hover:bg-primary-600 active:scale-95">
+            <OpenChatButton className="rounded-lg bg-primary px-8 py-3 text-lg font-semibold text-white transition hover:bg-primary-600 active:scale-95">
               Probá el Agente IA
-            </button>
+            </OpenChatButton>
           </div>
         </div>
       </div>
