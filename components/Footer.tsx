@@ -11,7 +11,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:gap-6">
             <a
-              href="https://wa.me/595000000000"
+              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "595000000000"}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-gray-300 transition hover:text-white"
