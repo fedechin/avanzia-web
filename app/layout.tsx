@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "AvanzIA - Agente de Inteligencia Artificial para Ventas y Atención al Cliente",
   description:
     "Agente de inteligencia artificial para empresas en Paraguay. Respondé consultas 24/7, filtrá oportunidades reales y profesionalizá la atención al cliente. Gs. 1.950.000/mes.",
+  icons: {
+    icon: "/favicon.svg",
+  },
   keywords: [
     "agente IA paraguay",
     "inteligencia artificial para empresas",

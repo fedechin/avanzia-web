@@ -4,7 +4,7 @@ import OpenChatButton from "./OpenChatButton";
 
 export default function Hero() {
   return (
-    <section className="bg-white px-4 py-16 md:py-24">
+    <section className="bg-white px-4 py-14 md:py-20">
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col items-center gap-8 md:flex-row md:gap-12">
           <div className="flex-1 text-center md:text-left">
@@ -14,8 +14,7 @@ export default function Hero() {
             </h1>
             <p className="mt-4 text-lg text-gray-600 md:text-xl">
               Respondé consultas 24/7, filtrá oportunidades reales y
-              profesionalizá la atención de tu empresa con inteligencia
-              artificial.
+              profesionalizá la atención de tu empresa.
             </p>
             <p className="mt-2 text-base font-medium text-primary">
               AvanzIA no reemplaza personas. Potencia equipos.
@@ -35,7 +34,7 @@ export default function Hero() {
               alt="Robot IA de AvanzIA"
               width={400}
               height={400}
-              className="mx-auto h-auto w-full max-w-sm md:max-w-md"
+              className="mx-auto h-auto w-full max-w-xs sm:max-w-sm md:max-w-md"
               priority
             />
           </div>
