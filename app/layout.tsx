@@ -3,6 +3,7 @@ import "./globals.css";
 import ChatWidget from "@/components/ChatWidget";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.avanzia.com.py"),
   title: "AvanzIA - Agente de Inteligencia Artificial para Ventas y Atención al Cliente",
   description:
     "Agente de inteligencia artificial para empresas en Paraguay. Respondé consultas 24/7, filtrá oportunidades reales y profesionalizá la atención al cliente. Gs. 1.950.000/mes.",
@@ -15,25 +16,39 @@ export const metadata: Metadata = {
     "chatbot para ventas",
     "atención al cliente automatizada",
     "AvanzIA",
+    "agente virtual",
+    "asistente IA",
   ],
   openGraph: {
     title: "AvanzIA - Agente de IA para Ventas y Atención al Cliente",
     description:
-      "Respondé consultas 24/7, filtrá oportunidades reales y profesionalizá la atención de tu empresa con inteligencia artificial.",
+      "Respondé consultas 24/7, filtrá oportunidades reales y profesionalizá la atención de tu empresa.",
     url: "https://www.avanzia.com.py",
     siteName: "AvanzIA",
     locale: "es_PY",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "AvanzIA - Agente de Inteligencia Artificial",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "AvanzIA - Agente de IA para Ventas y Atención al Cliente",
     description:
-      "Respondé consultas 24/7, filtrá oportunidades reales y profesionalizá la atención de tu empresa con inteligencia artificial.",
+      "Respondé consultas 24/7, filtrá oportunidades reales y profesionalizá la atención de tu empresa.",
+    images: ["/opengraph-image"],
   },
   robots: {
     index: true,
     follow: true,
+  },
+  alternates: {
+    canonical: "https://www.avanzia.com.py",
   },
 };
 
@@ -47,8 +62,15 @@ export default function RootLayout({
     "@type": "Organization",
     name: "AvanzIA",
     url: "https://www.avanzia.com.py",
+    logo: "https://www.avanzia.com.py/favicon.svg",
     description:
       "Agente de inteligencia artificial para ventas y atención al cliente en Paraguay.",
+    email: "contacto@avanzia.com.py",
+    areaServed: {
+      "@type": "Country",
+      name: "Paraguay",
+    },
+    slogan: "Pensar. Ejecutar. Avanzar.",
   };
 
   return (
