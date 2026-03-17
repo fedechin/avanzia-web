@@ -7,7 +7,7 @@ export default function Navbar() {
         <a href="#" className="flex items-center gap-2">
           <BrainIcon className="h-9 w-9" />
           <div className="flex flex-col leading-tight">
-            <span className="text-xl font-bold text-dark">AvanzIA</span>
+            <span className="font-heading text-xl font-bold text-dark">AvanzIA</span>
             <span className="hidden text-[10px] tracking-wider text-gray-400 sm:block">
               Pensar. Ejecutar. Avanzar.
             </span>
@@ -36,7 +36,7 @@ export default function Navbar() {
             href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "595000000000"}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white transition hover:bg-primary-600 active:scale-95"
+            className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white shadow-md shadow-primary/20 transition hover:bg-primary-600 hover:shadow-lg hover:shadow-primary/25 active:scale-[0.97]"
           >
             Contactanos
           </a>

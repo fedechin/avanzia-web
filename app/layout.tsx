@@ -1,6 +1,21 @@
 import type { Metadata } from "next";
+import { DM_Sans, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import ChatWidget from "@/components/ChatWidget";
+
+const heading = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-heading",
+  weight: ["600", "700", "800"],
+  display: "swap",
+});
+
+const body = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-body",
+  weight: ["400", "500", "600"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.avanzia.com.py"),
@@ -81,7 +96,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="antialiased">
+      <body className={`${heading.variable} ${body.variable} font-body antialiased`}>
         {children}
         <ChatWidget />
       </body>

@@ -35,16 +35,16 @@ const benefits = [
 
 export default function BenefitsSection() {
   return (
-    <section id="beneficios" className="bg-white px-4 py-16 md:py-24">
+    <section id="beneficios" className="bg-white px-4 pb-16 md:pb-24">
       <div className="mx-auto max-w-6xl">
-        <h2 className="text-2xl font-bold text-dark md:text-3xl">
+        <h2 className="font-heading text-2xl font-extrabold tracking-tight text-dark md:text-3xl">
           AvanzIA es la solución para:
         </h2>
-        <div className="mt-8 grid gap-4 sm:grid-cols-2">
+        <div className="stagger-children mt-8 grid gap-4 sm:grid-cols-2">
           {benefits.map((benefit) => (
             <div
               key={benefit.text}
-              className="flex items-start gap-4 rounded-xl bg-light p-5"
+              className="card-hover flex items-start gap-4 rounded-xl border border-primary-50 bg-gradient-to-br from-light to-white p-5"
             >
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary-100">
                 {benefit.icon}

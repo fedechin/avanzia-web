@@ -27,16 +27,16 @@ const steps = [
 
 export default function ImplementationSection() {
   return (
-    <section id="implementacion" className="bg-light px-4 py-16 md:py-24">
-      <div className="mx-auto max-w-6xl">
-        <h2 className="text-2xl font-bold text-dark md:text-3xl lg:text-4xl">
+    <section id="implementacion" className="grain relative overflow-hidden bg-gradient-to-br from-light via-primary-50/50 to-light px-4 py-16 md:py-24">
+      <div className="relative mx-auto max-w-6xl">
+        <h2 className="font-heading text-2xl font-extrabold tracking-tight text-dark md:text-3xl lg:text-4xl">
           Implementación simple, sin dolores de cabeza
         </h2>
-        <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+        <div className="stagger-children mt-8 flex flex-col gap-4 sm:flex-row">
           {steps.map((step) => (
             <div
               key={step.text}
-              className="flex flex-1 items-start gap-4 rounded-xl bg-white p-5"
+              className="card-hover flex flex-1 items-start gap-4 rounded-xl border border-white/80 bg-white/80 p-5 backdrop-blur-sm"
             >
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary-100">
                 {step.icon}

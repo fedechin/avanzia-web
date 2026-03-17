@@ -2,13 +2,13 @@ import BrainIcon from "./BrainIcon";
 
 export default function Footer() {
   return (
-    <footer className="bg-dark px-4 py-12 text-white">
+    <footer className="bg-gradient-to-b from-dark to-primary-900 px-4 py-12 text-white">
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col items-center gap-8 md:flex-row md:items-start md:justify-between">
           <div className="flex flex-col items-center md:items-start">
             <div className="flex items-center gap-2">
               <BrainIcon className="h-9 w-9" variant="light" />
-              <p className="text-2xl font-bold">AvanzIA</p>
+              <p className="font-heading text-2xl font-bold">AvanzIA</p>
             </div>
             <p className="mt-1 text-sm text-gray-400">
               Pensar. Ejecutar. Avanzar.

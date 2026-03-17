@@ -30,9 +30,9 @@ function CheckItem({ text }: { text: string }) {
 export default function TwoColumnBenefits() {
   return (
     <section className="bg-white px-4 py-16 md:py-24">
-      <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2">
-        <div className="rounded-xl bg-light p-6 md:p-8">
-          <h3 className="text-xl font-bold text-dark">
+      <div className="stagger-children mx-auto grid max-w-6xl gap-6 md:grid-cols-2">
+        <div className="card-hover rounded-xl border border-primary-50 bg-gradient-to-br from-light to-white p-6 md:p-8">
+          <h3 className="font-heading text-xl font-bold text-dark">
             Desde el área comercial:
           </h3>
           <ul className="mt-4 space-y-3">
@@ -41,8 +41,8 @@ export default function TwoColumnBenefits() {
             ))}
           </ul>
         </div>
-        <div className="rounded-xl bg-light p-6 md:p-8">
-          <h3 className="text-xl font-bold text-dark">
+        <div className="card-hover rounded-xl border border-primary-50 bg-gradient-to-br from-light to-white p-6 md:p-8">
+          <h3 className="font-heading text-xl font-bold text-dark">
             Desde el área operativa:
           </h3>
           <ul className="mt-4 space-y-3">
