@@ -1,17 +1,18 @@
-import BrainIcon from "./BrainIcon";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-40 border-b border-gray-100 bg-white/90 px-4 py-3 backdrop-blur-md">
+    <nav className="sticky top-0 z-40 border-b border-gray-100 bg-white/90 px-4 py-1.5 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between">
-        <a href="#" className="flex items-center gap-2">
-          <BrainIcon className="h-9 w-9" />
-          <div className="flex flex-col leading-tight">
-            <span className="font-heading text-xl font-bold text-dark">AvanzIA</span>
-            <span className="hidden text-[10px] tracking-wider text-gray-400 sm:block">
-              Pensar. Ejecutar. Avanzar.
-            </span>
-          </div>
+        <a href="#" className="flex items-center">
+          <Image
+            src="/images/avanzia home.jpeg"
+            alt="AvanzIA – Pensar. Ejecutar. Avanzar."
+            width={180}
+            height={50}
+            className="h-16 w-auto object-contain"
+            priority
+          />
         </a>
         <div className="flex items-center gap-3 sm:gap-4">
           <a
