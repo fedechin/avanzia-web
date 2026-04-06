@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getOpenAIClient, SYSTEM_PROMPT } from "@/lib/openai";
+import { getOpenAIClient } from "@/lib/openai";
+import { SYSTEM_PROMPT } from "@/lib/agent-context";
 
 export const dynamic = "force-dynamic";
 
